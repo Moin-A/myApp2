@@ -3,6 +3,8 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - apt-get install docker-ce-cli      
+      - docker login -u "moindev" -p "Thequint@101992" docker.io
       - apt-get update
       - apt-get install -y build-essential
       - apt-get install -y imagemagick libmagickwand-dev
