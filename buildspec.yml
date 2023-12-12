@@ -22,4 +22,8 @@ phases:
   post_build:
     commands:
       - echo Post build steps...
+      - bundle exec rails db:create
+      - bundle exec rails db:migrate
+      - bundle exec rails s
+      
       # Add any post-build steps here
