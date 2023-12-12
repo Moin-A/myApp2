@@ -7,6 +7,7 @@ phases:
       - apt-get install -y build-essential
       - apt-get install -y imagemagick libmagickwand-dev
       - gem install bundler
+      - apt-get install -y nodejs
 
   install:
     runtime-versions:
@@ -25,5 +26,5 @@ phases:
       - bundle exec rails db:create
       - bundle exec rails db:migrate
       - bundle exec rails s
-      
+
       # Add any post-build steps here
