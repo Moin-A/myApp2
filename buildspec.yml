@@ -10,10 +10,11 @@ phases:
 
   pre_build:
     commands:
-      - yum install -y libpq-dev   
+      - yum install -y libgmp-dev 
       - yum install -y libvips  
       - yum install -y ImageMagick
       - gem install bundler
+
 
   build:
     commands:
