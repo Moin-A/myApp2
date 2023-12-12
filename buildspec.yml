@@ -10,8 +10,12 @@ phases:
 
   pre_build:
     commands: 
-      - yum install -y ImageMagick-7.1.1
-      - gem install bundler
+    - yum install php-pear
+    - yum install php-devel
+    - yum install gcc
+    - yum install -y ImageMagick
+    - yum install ImageMagick-devel
+    - gem install bundler
 
 
   build:
