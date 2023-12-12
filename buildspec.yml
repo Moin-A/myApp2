@@ -6,7 +6,7 @@ phases:
       ruby: 3.1
     commands:
       - echo Installing dependencies...
-      - bundle install --path=.bundle
+      - bundle install 
 
   pre_build:
     commands:
