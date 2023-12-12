@@ -10,8 +10,6 @@ phases:
 
   pre_build:
     commands: 
-    - yum install php-pear
-    - yum install php-devel
     - yum install gcc
     - yum install -y ImageMagick
     - yum install ImageMagick-devel
