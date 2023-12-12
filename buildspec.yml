@@ -10,10 +10,12 @@ phases:
 
   pre_build:
     commands:
+      - yum install -y libpq-dev   
+      - yum install -y libvips  
       - yum install -y ImageMagick
+      - gem install bundler
 
   build:
-      - gem install bundler
     commands:
      - bundle install 
      - echo Building RoR application...
