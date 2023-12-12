@@ -16,7 +16,7 @@ phases:
 
   build:
     commands:
-     - bundle install 
+     - bundle install --verbose
      - echo Building RoR application...
       # Add your build commands here
 
