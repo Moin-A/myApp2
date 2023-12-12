@@ -6,15 +6,18 @@ phases:
       ruby: 3.1
     commands:
       - echo Installing dependencies...
-      - bundle install 
+     
 
   pre_build:
     commands:
-      - echo Preparing for build...
+      - rbenv install 3.1.2
+      - rbenv global 3.1.2
+      - gem install bundler
 
   build:
     commands:
-      - echo Building RoR application...
+     - bundle install --path=.bundle
+     - echo Building RoR application...
       # Add your build commands here
 
   post_build:
