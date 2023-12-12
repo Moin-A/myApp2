@@ -73,7 +73,7 @@ end
 gem 'active_model_serializers'
 gem "solidus", "= 4.2.3"
 gem 'rack-cors'
-gem "solidus_auth_devise", "~> 2.5"
+gem "solidus_auth_devise", "~> 2.5.8"
 gem "canonical-rails"
 gem "solidus_support"
 gem "truncate_html"
