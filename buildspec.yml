@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      ruby: 2.7
+    commands:
+      - echo Installing dependencies...
+
+  pre_build:
+    commands:
+      - echo Preparing for build...
+
+  build:
+    commands:
+      - echo Building RoR application...
+
+  post_build:
+    commands:
+      - echo Post build steps...
