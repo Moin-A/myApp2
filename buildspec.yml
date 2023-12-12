@@ -10,7 +10,8 @@ phases:
 
   pre_build:
     commands:
-      - sudo apt install imagemagick
+      - sudo apt update
+      - sudo apt install -y imagemagick
       - gem install bundler
 
   build:
