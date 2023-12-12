@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4"
+gem "rails", "~> 7.0.6"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -71,7 +71,7 @@ group :test do
   gem "webdrivers"
 end
 gem 'active_model_serializers'
-gem "solidus", "= 4.0.0"
+gem "solidus", "= 4.3.2"
 gem 'rack-cors'
 gem "solidus_auth_devise", "~> 2.5"
 gem "canonical-rails"
