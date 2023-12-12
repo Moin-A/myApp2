@@ -5,7 +5,7 @@ phases:
     commands:
       - apt-get update
       - apt-get install -y build-essential
-      - apt-get install -y  imagemagick
+      - apt-get install -y imagemagick libmagickwand-dev
       - gem install bundler
 
   install:
@@ -15,6 +15,7 @@ phases:
   build:
     commands:
       - bundle install --verbose
+      - convert -version  # Check ImageMagick version
       - echo Building RoR application...
       # Add your build commands here
 
