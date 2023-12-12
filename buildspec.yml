@@ -11,6 +11,7 @@ phases:
   pre_build:
     commands:
       - yum install -y ImageMagick
+      - yum install -y brew
       - gem install bundler
 
   build:
