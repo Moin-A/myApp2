@@ -71,7 +71,7 @@ group :test do
   gem "webdrivers"
 end
 gem 'active_model_serializers'
-gem "solidus", "= 4.3.3"
+gem "solidus", "= 4.2.3"
 gem 'rack-cors'
 gem "solidus_auth_devise", "~> 2.5"
 gem "canonical-rails"
