@@ -15,12 +15,14 @@ phases:
   build:
     commands:
       - docker build --no-cache  -t feetet/ecom:$CODEBUILD_RESOLVED_SOURCE_VERSION .
-      - docker push feetet/ecom:$CODEBUILD_RESOLVED_SOURCE_VERSION
+      
       # Add your build commands here
 
   post_build:
     commands:
       - echo Post build steps...
+      - docker push feetet/ecom:$CODEBUILD_RESOLVED_SOURCE_VERSION
+     
   
 
       # Add any post-build steps here
