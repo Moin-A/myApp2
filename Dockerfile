@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     yarn
 WORKDIR /app
 RUN ls
-COPY backendapp/Gemfile backendapp/Gemfile.lock ./
+COPY Gemfile  ./
 RUN gem install bundler -v '~> 2.2' && bundle install --path=.bundle
 COPY / ./
 EXPOSE 3000
