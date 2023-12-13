@@ -14,14 +14,14 @@ phases:
 
   build:
     commands:
-      - docker build --no-cache  -t feetet/ecom:$CODEBUILD_RESOLVED_SOURCE_VERSION .
+      - docker build --no-cache  -t moindev/moin_nextjs:$CODEBUILD_RESOLVED_SOURCE_VERSION .
       
       # Add your build commands here
 
   post_build:
     commands:
       - echo Post build steps...
-      - docker push feetet/ecom:$CODEBUILD_RESOLVED_SOURCE_VERSION
+      - docker push moindev/moin_nextjs:$CODEBUILD_RESOLVED_SOURCE_VERSION
      
   
 
