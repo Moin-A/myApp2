@@ -2,8 +2,10 @@ version: 0.2
 
 phases:
   pre_build:
-    commands:
+    commands:      
       - docker login -u "moindev" -p "Thequint@101992" docker.io
+     
+      
 
 
   install:
@@ -12,7 +14,8 @@ phases:
 
   build:
     commands:
-
+      - docker build --no-cache --target frontend -t feetet/ecom:$CODEBUILD_RESOLVED_SOURCE_VERSION -f Dockerfile
+      - docker push moindev/moin-blog-frontend:$CI_COMMIT_SHORT_SHA
       # Add your build commands here
 
   post_build:
