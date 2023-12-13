@@ -15,7 +15,7 @@ phases:
   build:
     commands:
       - docker build --no-cache  -t feetet/ecom:$CODEBUILD_RESOLVED_SOURCE_VERSION .
-      - docker push moindev/moin-blog-frontend:$CI_COMMIT_SHORT_SHA
+      - docker push feetet/ecom:$CODEBUILD_RESOLVED_SOURCE_VERSION
       # Add your build commands here
 
   post_build:
